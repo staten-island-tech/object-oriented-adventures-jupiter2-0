@@ -1,6 +1,28 @@
-import json
-## Open the JSON file of movie data
-movies = open("./movies.json", encoding="utf8")
-## create variable "data" that represents the enitre movie list
-data = json.load(movies)
 
+
+
+
+class animal:
+    def __init__(self,type,health):
+
+        pass
+
+class npc:
+    def __init__(self):
+
+        pass
+
+class player:
+    def __init__(self):
+
+        pass
+
+class Boss:
+    def __init__(self):
+
+        pass
+
+class items:
+    def __init__(self):
+
+        pass
