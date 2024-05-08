@@ -21,12 +21,12 @@ name []
 ### ANIMAL
 ```python
 TYPES = [Water, Fire, Grass, Electric] 
-
+            1    2      3       4
 WEAKNESS:
- - grass+ground/water
+ - grass/water
  - water+grass/fire
  - fire/grass
- - ground/electric
+ - grass/electric
 
 SPECIES/NAME(S):
 name [type] = 
