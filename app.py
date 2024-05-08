@@ -8,8 +8,9 @@ class dialouge:
         self.dB = dB
         self.dEnd = dEnd
 
+class battle:
+    def __init__(self):
         pass
-
 
 class animal:
     def __init__(self,type,hp,attack):
