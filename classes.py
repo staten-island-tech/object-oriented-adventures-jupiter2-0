@@ -6,7 +6,7 @@ class dialouge:
         self.dP = dP
         self.dB = dB
         self.dEnd = dEnd
-
+    pass
 class battle:
     def __init__(self,):
         pass
@@ -56,3 +56,8 @@ class Items:
         self.heal = heal
         self.boost = boost
         pass
+<<<<<<< HEAD
+=======
+
+class 
+>>>>>>> Brianna
