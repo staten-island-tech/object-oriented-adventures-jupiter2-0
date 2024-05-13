@@ -56,5 +56,3 @@ class Items:
         self.heal = heal
         self.boost = boost
         pass
-
-class 
