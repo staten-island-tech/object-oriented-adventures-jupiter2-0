@@ -6,7 +6,7 @@ class dialouge:
         self.dP = dP
         self.dB = dB
         self.dEnd = dEnd
-
+    pass
 class battle:
     def __init__(self,):
         pass
