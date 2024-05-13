@@ -1,10 +1,15 @@
 
-
-Nurse = ("Nurse:Would you like to heal your teammate? (Y/N)")
-if Nurse == "Y":
-    ("Nurse:Your companion has healed", {hpup})
-Merchant = ("Merchant:Would you like to buy items? (Y/N)")
-if Merchant == "Y":
-    ("Items:")
-Npc8 = ("Hello!")
+class NPCactions:
+    def Nurse():
+        Nurse = input("Nurse:Would you like to heal your teammate? (Y/N)")
+        if Nurse == "Y":
+            ("Nurse:Your companion has healed")
+    def Merchant():
+        Merchant = input("Merchant:Would you like to buy items? (Y/N)")
+        if Merchant == "Y":
+            ("Items:")
+    def Npc8():
+        Npc8 = ("Hello!")
             #("Your companion has healed {hpup}")
+pass
+
