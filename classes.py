@@ -56,8 +56,4 @@ class Items:
         self.heal = heal
         self.boost = boost
         pass
-<<<<<<< HEAD
-=======
 
-class 
->>>>>>> Brianna
