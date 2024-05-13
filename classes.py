@@ -22,9 +22,11 @@ class animal:
 class npc:
     def __init__(self,name):
         self.name = name
-        self.dialouge = dialouge
-
         pass
+np1 = npc("Nurse")
+np2 = npc("Merchant")
+np3 = npc("8")
+
 
 class player:
     def __init__(self,name1,hp1,attack1,inv):
@@ -41,6 +43,11 @@ class Boss:
         self.hp2 = hp2
         self.attack2 = attack2
 
+        pass
+
+class inventory:
+    def __init__(self,Items):
+        self.Items = Items
         pass
 
 class Items:
