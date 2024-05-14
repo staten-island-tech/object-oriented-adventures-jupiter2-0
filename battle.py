@@ -2,7 +2,7 @@ import random
 
 
 def take_damage(self, damage):
-        self.halth -= damage
+        self.health -= damage
 
 def alive(self):
         return self.health < 0
@@ -12,8 +12,5 @@ def attack(self, enemy):
         enemy.take_damage(damage)
         print(f"{self.name} attacks {enemy.name} for {damage} damage")
     
-def battle(player, enemy):
-        print("Battle begins")
-
-def take_damage():
-    
+def take_dmg(player, enemy):
+        player 
