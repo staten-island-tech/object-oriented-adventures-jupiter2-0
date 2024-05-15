@@ -28,27 +28,23 @@ WEAKNESS:
  - fire/grass           2/3
  - grass/electric       3/4
 
-SPECIES/NAME(S): 3 of each element
-Hydro       [1] = 
-Wisp        [1] =
-Coralwhirl  [1] =
-Sylphire    [2] = Fury
-Infernite   [2] =
-Emberix     [2] =
-Floridance  [3] =
-Komorebi    [3] = Impare
-Serenine    [3] =
-Kaminari    [4] = Swiftness
-Voltorb     [4] =
-luxray      [4] =
+ANIMAL/NAME(S): 3 of each element
+Hydro       [1] = Chilling Water    ,Aqua Cutter    ,Flee/Heal
+Wisp        [1] = Bubble Beam       ,Clamp          ,Flee/Heal
+Coralwhirl  [1] = Hydro Cannon      ,Dive           ,Flee/Heal
+Sylphire    [2] = Fire Blast        ,Bitter Blade   ,Flee/Heal
+Infernite   [2] = Blue Flare        ,Fire Punch     ,Flee/Heal
+Emberix     [2] = Flame Burst       ,Flare Blitz    ,Flee/Heal
+Floridance  [3] = Energy Ball       ,Branch Poke    ,Flee/Heal
+Komorebi    [3] = Drum Beating      ,Horn Leech     ,Flee/Heal
+Serenine    [3] = Bullet Seed       ,Leaf Blade     ,Flee/Heal
+Kaminari    [4] = Thunder           ,Bolt Beak      ,Flee/Heal
+Voltorb     [4] = Shock Wave        ,Plasma Fist    ,Flee/Heal
+luxray      [4] = Electro Ball      ,Bolt Strike    ,Flee/Heal
 
 
 BATTLE/ATTACK(S):
--
--
--
--
--
+
 ```
 ### BOSS CHARACTERISTICS:
 ```python
