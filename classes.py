@@ -47,11 +47,9 @@ class enemy:
 
 
 class Boss:
-    def __init__(self,name2,hp2,attack2):
-        self.name2 = name2
-        self.hp2 = hp2
-        self.attack2 = attack2
-
+    def __init__(self, health, attack):
+        self.health= health
+        self.attack = attack
         pass
 
 class Items:
@@ -61,4 +59,23 @@ class Items:
         self.boost = boost
         pass
 
+class buyer:
+    def __init__(self, name, budget):
+        self.name = name 
+        self.budget = budget
+        
+    def buy(self, seller, good, price):
+        if self.budget >= price:
+            self.budget -= price
+            seller.sell(good, price)
+
+class seller:
+    def __init__(self,name, iven, price):
+        self.name = name
+        self.iven = iven 
+        self.price = price
+
+    def sell(self, good, price):
+        if good in self.iven:
+            self.iven.remove(good)
 
