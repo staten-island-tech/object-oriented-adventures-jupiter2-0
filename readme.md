@@ -44,7 +44,8 @@ luxray      [4] = Electro Ball      ,Bolt Strike    ,Flee/Heal
 
 
 BATTLE/ATTACK(S):
-
+First Attack = []
+Full health = 
 ```
 ### BOSS CHARACTERISTICS:
 ```python
