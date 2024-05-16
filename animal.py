@@ -1,63 +1,63 @@
 animal = [{
-    'name':"A",
+    'name':"Hydro",
     'type':1,
     'weakness':3,
-    'attacks': (a1,a2,a3)
+    'attacks': (Chilling Water,a2,a3,a4)
     },{
-    'name':"A",
+    'name':"Wisp",
     'type':1,
     'weakness':3,
-    'attacks': (a1,a2,a3)
+    'attacks': (Bubble Beam,a2,a3,a4)
     },{
-    'name':"A",
+    'name':"Coralwhirl",
     'type':1,
     'weakness':3,
-    'attacks': (a1,a2,a3)
+    'attacks': (Hydro Cannon,a2,a3)
     },{
-    'name':"B",
+    'name':"Sylphire",
     'type':2,
     'weakness':[1,3],
-    'attacks': (a1,a2,a3)
+    'attacks': (Fire Blast,a2,a3)
     },{
-    'name':"B",
+    'name':"Infernite",
     'type':2,
     'weakness':[1,3],
-    'attacks': (a1,a2,a3)
+    'attacks': (Blue Flare,a2,a3)
     },{
-    'name':"B",
+    'name':"Emberix",
     'type':2,
     'weakness':[1,3],
-    'attacks': (a1,a2,a3)
+    'attacks': (Flame Burst,a2,a3)
     },{
-    'name':"C",
+    'name':"Floridance",
     'type':3,
     'weakness':2,
-    'attacks': (a1,a2,a3)
+    'attacks': (Energy Ball,a2,a3)
     },{
-    'name':"C",
+    'name':"Komorebi",
     'type':3,
     'weakness':2,
-    'attacks': (a1,a2,a3)
+    'attacks': (Drum Beating,a2,a3)
     },{
-    'name':"C",
+    'name':"Serenine",
     'type':3,
     'weakness':2,
-    'attacks': (a1,a2,a3)
+    'attacks': (Bullet Seed,a2,a3)
     },{
-    'name':"D",
+    'name':"Kaminari",
     'type':4,
     'weakness':3,
-    'attacks': (a1,a2,a3)
+    'attacks': (Thunder,a2,a3)
     },{
-    'name':"D",
+    'name':"Voltorb",
     'type':4,
     'weakness':3,
-    'attacks': (a1,a2,a3)
+    'attacks': (Shock Wave,a2,a3)
     },{
-    'name':"D",
+    'name':"Zaptricity",
     'type':4,
     'weakness':3,
-    'attacks': (a1,a2,a3)
+    'attacks': (Electro Ball,a2,a3)
     }
 ]
 

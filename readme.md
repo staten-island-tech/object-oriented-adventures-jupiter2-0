@@ -40,24 +40,25 @@ Komorebi    [3] = Drum Beating      ,Horn Leech     ,Flee/Heal
 Serenine    [3] = Bullet Seed       ,Leaf Blade     ,Flee/Heal
 Kaminari    [4] = Thunder           ,Bolt Beak      ,Flee/Heal
 Voltorb     [4] = Shock Wave        ,Plasma Fist    ,Flee/Heal
-luxray      [4] = Electro Ball      ,Bolt Strike    ,Flee/Heal
+Zaptricity  [4] = Electro Ball      ,Bolt Strike    ,Flee/Heal
 
 
 BATTLE/ATTACK(S):
-First Attack = []
-Full health = 
+Full health = 50
+1st attck = []
+2nd attack = []
+run/items
 ```
 ### BOSS CHARACTERISTICS:
 ```python
-
+Full health = 70
+1st attack = []
+2nd attack = []
+"ending"
 ```
 ### INVENTORY/ITEM(S):
 ```python
-- 
-- 
-- 
-- 
-- 
+
 
 ```
 
