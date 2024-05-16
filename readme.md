@@ -41,22 +41,7 @@ name [type] =
 name [type] =
 
 BATTLE/ATTACK(S):
-- (-1 hp)
-- (-1 hp)
-- (-1 hp)
-- (-1 hp)
-- (-3 hp)
-- (-3 hp)
-- (-3 hp)
-- (-3 hp)
-- (-5 hp)
-- (-5 hp)
-- (-5 hp)
-- (-5 hp)
-- (-10 hp)
-- (-10 hp)
-- (-10 hp)
-- (-10 hp)
+- 
 ```
 ### BOSS CHARACTERISTICS:
 ```python
