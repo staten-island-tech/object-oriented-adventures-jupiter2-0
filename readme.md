@@ -47,15 +47,15 @@ attack1 = int["Electro Ball","Shock Wave","Thunder","Bullet Seed","Drum Beating"
 
 BATTLE/ATTACK(S):
 Full health = 50
-1st attck = []
-2nd attack = []
+attck1 = []
+ attack2 = []
 run/items
 ```
 ### BOSS CHARACTERISTICS:
 ```python
 Full health = 70
-1st attack = []
-2nd attack = []
+ attack1 = []
+ attack2 = []
 "ending"
 ```
 ### INVENTORY/ITEM(S):
