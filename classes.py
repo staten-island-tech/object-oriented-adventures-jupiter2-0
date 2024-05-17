@@ -1,21 +1,24 @@
 class dialouge:
-    def __init__(self,dStart,dA,dnpc,dP,dB,dEnd):
+    def __init__(self,dStart,dA,dnpc,dB,dEnd):
         dStart = dStart
         self.dA = dA
         self.dnpc = dnpc
-        self.dP = dP
         self.dB = dB
         self.dEnd = dEnd
     pass
 class battle:
-    def __init__(self,):
+    def __init__(self,take_damage,alive,take_dmg,attack):
+        self.take_damage = take_damage
+        self.alive = alive
+        self.take_dmg = take_dmg
+        self.attack = attack
         pass
 
 class animal:
-    def __init__(self,type,hp,attack):
+    def __init__(self,type,hp):
         self.type = type
         self.hp = hp
-        self.attack = attack
+        self.battle = battle
 
         pass
 

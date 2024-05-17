@@ -11,5 +11,6 @@ def dnpc(self):
     def Npc8():
         Npc8 = ("Hello! Meet with others and save us from the torment of the Boss.")
             #("Your companion has healed {hpup}")
-pass
+def dB(self):
+    print()
 
