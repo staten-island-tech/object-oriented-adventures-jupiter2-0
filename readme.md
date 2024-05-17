@@ -9,19 +9,23 @@ main goal = defeat the boss to reign over the battlefield
 ```python
 Inventory - max 100 items
 Character responses = Y/N
+characteristics: 
+smart
+stragetic 
+
 ```
 
 ### NPC 
 ```python
 (Area found in) name [job/role] 
-name [Nurse] - Hospital
-name [Merhcant] - Shop
-name [Pal] - 
+name [nurse] 
+name [merchant] 
+name [violet] 
 ```
 ### ANIMAL
 ```python
 TYPES = [Water, Fire, Grass, Electric] 
-            1    2      3       4
+
 WEAKNESS:
  - grass/water          3/1
  - water+grass/fire     1+3/2
@@ -43,6 +47,10 @@ Voltorb     [4] = Shock Wave        ,Plasma Fist    ,Flee/Heal
 Zaptricity  [4] = Electro Ball      ,Bolt Strike    ,Flee/Heal
 attack1 = int["Electro Ball","Shock Wave","Thunder","Bullet Seed","Drum Beating","Energy Ball","Flame Burst","Blue Flare","Hydro Cannon","Bubbble Beam","Chilling Water"]
 
+ - grass+ground/water
+ - water+grass/fire
+ - fire/grass
+ - ground/electric
 
 
 BATTLE/ATTACK(S):
@@ -50,6 +58,7 @@ Full health = 50
 attck1 = []
  attack2 = []
 run/items
+- 
 ```
 ### BOSS CHARACTERISTICS:
 ```python
@@ -61,16 +70,22 @@ Full health = 70
 ### INVENTORY/ITEM(S):
 ```python
 
+- 10 balls
+- 2 revive stones
+- 5 potions(+20 hp)
+- fruits(grapes, mango, blackberry)
+- 100 coins
 
 ```
 
 ### Dialouge
 ```python
 Starter Dialouge
----------------------------------
-""
+"Welcome ......."
 
 Encounter/NPC+SPECIES
+mom
+starter 
 ---------------------------------
 NPC
 ""
