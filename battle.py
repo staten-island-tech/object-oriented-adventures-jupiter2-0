@@ -13,4 +13,4 @@ def attack(self, enemy):
         print(f"{self.name} attacks {enemy.name} for {damage} damage")
     
 def take_dmg(player, enemy):
-        player 
+        player.health - attack
