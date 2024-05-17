@@ -41,6 +41,8 @@ Serenine    [3] = Bullet Seed       ,Leaf Blade     ,Flee/Heal
 Kaminari    [4] = Thunder           ,Bolt Beak      ,Flee/Heal
 Voltorb     [4] = Shock Wave        ,Plasma Fist    ,Flee/Heal
 Zaptricity  [4] = Electro Ball      ,Bolt Strike    ,Flee/Heal
+attack1 = int["Electro Ball","Shock Wave","Thunder","Bullet Seed","Drum Beating","Energy Ball","Flame Burst","Blue Flare","Hydro Cannon","Bubbble Beam","Chilling Water"]
+
 
 
 BATTLE/ATTACK(S):
