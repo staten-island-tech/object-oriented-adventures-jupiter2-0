@@ -1,18 +1,11 @@
-import json
+import character
 
-
-print("Welcome to __. This is the begining of your journey. Catch and level up to defeat bosses. The final goal of your journey is to defeat the final boss.")
+print("Welcome to "
 name = input("Choose a name for your charcter:")
 player = name
 
-while True:
-    inven = input("Do you want to check your inventory?")
-    if inven.lower == 'no':
-        break
-    
 
-print("These are you're starter pets.")
-
+input("Do you want to move up, down, left or right:")
 def move (self, direction):
     if direction == "up":
         self.y += 1
@@ -23,15 +16,10 @@ def move (self, direction):
     elif direction == "right":
         self.x += 1
 
-def main():
-    player = player(0,0)
-
-while True:
-    user_input = input("right/ left/ up/ down:")
-    if user_input in ["right, left, up, down"]:
-        player.move(user_input)
+l = "left"
+r = "right"
+u = "up"
+d = "down"
 
 
-
-
-
+    
