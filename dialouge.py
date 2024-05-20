@@ -1,3 +1,5 @@
+def dStart(self):
+    print("Welcome to __. This is the begining of your journey. Catch and level up to defeat bosses. The final goal of your journey is to defeat the final boss.")
 
 def dnpc(self):
     def Nurse():
@@ -12,5 +14,11 @@ def dnpc(self):
         Npc8 = ("Hello! Meet with others and save us from the torment of the Boss.")
             #("Your companion has healed {hpup}")
 def dB(self):
-    print()
+    if health == 100:
+        print("What are you doing here!!")
+# meeting
+    if health == 0:
+        print("You have defeated me...")
+#Death
+
 

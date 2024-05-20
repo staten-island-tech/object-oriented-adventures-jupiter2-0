@@ -6,6 +6,11 @@ class dialouge:
         self.dB = dB
         self.dEnd = dEnd
     pass
+class map:
+    def __init__(self,Map):
+        self.Map = Map
+        pass
+
 class battle:
     def __init__(self,take_damage,alive,take_dmg,attack):
         self.take_damage = take_damage
@@ -30,12 +35,13 @@ class npc:
         pass
 
 class player:
-    def __init__(self,name1,hp1,attack1,inv, health):
+    def __init__(self,name1,hp1,attack1,inv,health,move):
         self.name1 = name1
         self.hp1 = hp1
         self.attack1 = attack1
         self.inv = inv
         self.health = health
+        self.move = move
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -48,12 +54,6 @@ class enemy:
         self.health = health
         self.attack = attack
 
-
-class Boss:
-    def __init__(self, health, attack):
-        self.health= health
-        self.attack = attack
-        pass
 
 class Items:
     def __init__(self,title,heal,boost):
