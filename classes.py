@@ -1,6 +1,6 @@
 class dialouge:
-    def __init__(self,dStart,dA,dnpc,dB,dEnd):
-        dStart = dStart
+    def __init__(self,dA,dnpc,dB,dEnd):
+        
         self.dA = dA
         self.dnpc = dnpc
         self.dB = dB
