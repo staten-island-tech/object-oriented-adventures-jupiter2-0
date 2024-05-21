@@ -1,9 +1,21 @@
-<mxfile host="app.diagrams.net" modified="2024-05-09T15:53:00.220Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" version="24.3.1" etag="z5t_rPhBNwD6ZsMo8zu6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-21T16:26:34.523Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="4OEy37HSM_Nbr-pdOVGG" version="24.3.1" type="github">
   <diagram name="Page-1" id="UzpHlQEHdBbeiQkt2dOt">
-    <mxGraphModel>
+    <mxGraphModel dx="863" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="9NYJH5eUAhIsgToiFgUX-1" value="Intro w/ dialouge / no tut" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9NYJH5eUAhIsgToiFgUX-2" value="Open Map 2 explore/ meet enemys + get starter companion" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9NYJH5eUAhIsgToiFgUX-3" value="After getting more companions they meet the boss" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9NYJH5eUAhIsgToiFgUX-4" value="Meet the boss / defeat it" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
