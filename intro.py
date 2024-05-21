@@ -9,8 +9,14 @@ if inven == "yes":
     open inventory
 if inven == "no":
     exit
+
+
 input("Do you want to move up, down, left or right:")
 
 def movement():
     player.move
     
+
+
+
+
