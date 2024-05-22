@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 width = 45
 height = 20
@@ -31,3 +32,5 @@ print_map(map)
 
 
 
+=======
+>>>>>>> b19e4886b5805412f62304797be575cbd4b1ff51

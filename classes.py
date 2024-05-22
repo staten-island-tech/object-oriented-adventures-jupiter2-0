@@ -1,21 +1,29 @@
 class dialouge:
-    def __init__(self,dStart,dA,dnpc,dP,dB,dEnd):
-        dStart = dStart
+    def __init__(self,dA,dnpc,dB,dEnd):
+        
         self.dA = dA
         self.dnpc = dnpc
-        self.dP = dP
         self.dB = dB
         self.dEnd = dEnd
     pass
+class map:
+    def __init__(self,Map):
+        self.Map = Map
+        pass
+
 class battle:
-    def __init__(self,):
+    def __init__(self,take_damage,alive,take_dmg,attack):
+        self.take_damage = take_damage
+        self.alive = alive
+        self.take_dmg = take_dmg
+        self.attack = attack
         pass
 
 class animal:
-    def __init__(self,type,hp,attack):
+    def __init__(self,type,hp):
         self.type = type
         self.hp = hp
-        self.attack = attack
+        self.battle = battle
 
         pass
 
@@ -27,12 +35,13 @@ class npc:
         pass
 
 class player:
-    def __init__(self,name1,hp1,attack1,inv, health):
+    def __init__(self,name1,hp1,attack1,inv,health,move):
         self.name1 = name1
         self.hp1 = hp1
         self.attack1 = attack1
         self.inv = inv
         self.health = health
+        self.move = move
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -45,12 +54,6 @@ class enemy:
         self.health = health
         self.attack = attack
 
-
-class Boss:
-    def __init__(self, health, attack):
-        self.health= health
-        self.attack = attack
-        pass
 
 class Items:
     def __init__(self,title,heal,boost):
