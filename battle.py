@@ -1,6 +1,5 @@
 import random
 
-
 def take_damage(self, damage):
         self.health -= damage
 
@@ -14,3 +13,5 @@ def attack(self, enemy):
     
 def take_dmg(player, enemy):
         player.health - attack
+
+        
