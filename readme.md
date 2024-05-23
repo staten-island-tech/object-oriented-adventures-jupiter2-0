@@ -90,10 +90,10 @@ mom
 starter 
 ---------------------------------
 NPC
-""
-_____
-SPE
-""
+nurse / YN
+merchant / YN
+boss
+violet
 
 BATTLE
 ---------------------------------
@@ -101,9 +101,10 @@ BATTLE
 
 BOSS
 ---------------------------------
-""
+"" 
 
 END
 ---------------------------------
-""
+meet dialogue
+death dialogue
 ```
