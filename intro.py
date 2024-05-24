@@ -10,9 +10,9 @@ Player.name = name"""
 def create_map(width, height):
     map = [['[ ]' for _ in range(width)] for _ in range(height)]
     
-   
+ 
     x, y = 0, 0
-    map[y][x] = '[S]'  
+    map[y][x] = '[S]'
     
     while y < height - 1:
         direction = random.choice(['down', 'right'])
@@ -20,13 +20,14 @@ def create_map(width, height):
             y += 1
         elif direction == 'right' and x < width - 1:
             x += 1
-        map[y][x] = '   ' 
- 
-    map[height - 1][x] = '    E    '  
+        map[y][x] = '   '  
+
+
+    map[height - 1][x] = '    E    ' 
 
     return map
 
-def print_maze(map, player):
+def print_map(map, player):
     for y in range(len(map)):
         row = ""
         for x in range(len(map[y])):
@@ -38,13 +39,13 @@ def print_maze(map, player):
 
 if __name__ == "__main__":
     width = 45
-    height = 20
+    height = 20  
     
     map = create_map(width, height)
     player = Player(0, 0)
 
     while True:
-        print_maze(map, player)
+        print_map(map, player)
         move = input("Enter move (up, down, left, right): ").strip().lower()
         
         if move in ['up', 'down', 'left', 'right']:
@@ -52,12 +53,17 @@ if __name__ == "__main__":
         else:
             print("Invalid move. Please enter 'up', 'down', 'left', or 'right'.")
 
-        if map[player.y][player.x] == ' E ':
+        if map[player.y][player.x] == '    E    ':
             print("Congratulations! You've reached the exit!")
             break
 
-    
+
         print(f"Inventory: {player.inventory.show_inventory()}")
+
+
+
+
+    
 
 
 
