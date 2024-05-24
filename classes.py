@@ -1,4 +1,4 @@
-class dialouge:
+class dialogue:
     def __init__(self,dA,dnpc,dB,dEnd):
         
         self.dA = dA
@@ -30,7 +30,7 @@ class animal:
 class npc:
     def __init__(self,name):
         self.name = name
-        self.dialouge = dialouge
+        self.dialouge = dialogue
 
         pass
 

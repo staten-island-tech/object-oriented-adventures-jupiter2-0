@@ -4,10 +4,14 @@ def dnpc(self):
         Nurse = input("Nurse: Welcome would you like to heal your teammate? (Y/N)")
         if Nurse == "Y":
             print("Nurse: Your companion has healed!",)
+        else:
+            print("Have a safe journey!")
     def Merchant1():
         Merchant = input("Merchant: Hello would you like to buy items? (Y/N)")
         if Merchant == "Y":
             0
+        else:
+            print("See you soon.")
     def Violet1():
         Violet = print("Violet: Hello! Meet with others and save us from the torment of the Boss.")
 
