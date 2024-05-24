@@ -65,14 +65,14 @@ class Inventory:
 
 
 import random 
-class Battle():
+class Battle(Player):
     def take_damage(self, damage):
         Player.health -= damage
 
     def is_alive(self):
         return Player.health > 0
 
-    def attack_enemy(self, enemy):
+    def attack_enemy(Player, enemy):
         damage = random.randint(1, Player.attack)
         Enemy.damage(damage)
         print(f"{Player.name} attacks {Enemy.name} for {damage} damage!")
