@@ -5,7 +5,7 @@ def dnpc(self):
         if Nurse == "Y":
             print("Nurse: Your companion has healed!",)
     def Merchant1():
-        Merchant = input("Merchant:Hello would you like to buy items? (Y/N)")
+        Merchant = input("Merchant: Hello would you like to buy items? (Y/N)")
         if Merchant == "Y":
             0
     def Violet1():
