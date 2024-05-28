@@ -1,8 +1,8 @@
 class dialogue:
-    def __init__(self,dA,dnpc,dB,dEnd):
-        
-        self.dA = dA
-        self.dnpc = dnpc
+    def __init__(self,Nurse1,Merchant1,Violet1,dB,dEnd):
+        self.dnpc = Nurse1
+        self.Merchant1 = Merchant1
+        self.Violet1 = Violet1
         self.dB = dB
         self.dEnd = dEnd
     pass
@@ -19,12 +19,10 @@ class battle:
         self.attack = attack
         pass
 
-class animal:
+class animal(battle):
     def __init__(self,type,hp):
         self.type = type
         self.hp = hp
-        self.battle = battle
-
         pass
 
 class npc:
