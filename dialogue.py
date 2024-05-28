@@ -20,8 +20,12 @@ def dB(self):
     if health == 100:
         print("What are you doing here!!")
 # meeting
-    if health == 0:
+    elif health == 0:
         print("You have defeated me...")
 #Death
+        
+def dEnd(self):
+     print("Thank you",[],"now we are safe from the Boss. See you soon!")
 
-
+def drestart():
+     print("???: You have failed to defeat the boss")
