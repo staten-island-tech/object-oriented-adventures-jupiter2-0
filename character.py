@@ -1,18 +1,7 @@
 
-class Animal:
-    def __init__(self,type,hp,attack):
-        self.type = type
-        self.hp = hp
-        self.attack = attack
-
-        
 class Player:
-    def __init__(self,name,hp,attack, health, alive):
+    def __init__(self,name):
         self.name = name
-        self.hp1 = hp
-        self.attack = attack
-        self.health = health
-        self.alive = alive
 
     def __init__(self, x=0, y=0):
         self.x = x
@@ -31,15 +20,15 @@ class Player:
 
     def get_position(self):
         return self.x, self.y
+    
 
 
-class Enemy: 
-    def __init__(self, name, health, attack, alive, damage):
-        self.name = name
-        self.health = health
-        self.attack = attack 
-        self.alive = alive
-        self.damage = damage
+class npc:
+    def __init__(self, name, dialogue):
+        self.name = name 
+        self.dialogue = dialogue
+
+
 
 class Items:
     def __init__(self,name,heal,boost):
@@ -64,29 +53,74 @@ class Inventory:
                 print(f"- {item}")
 
 
+
+
 import random 
-class Battle(Player):
-    def take_damage(self, damage):
-        Player.health -= damage
+class companion:
+    def __init__(self, name, health=100, attack=10, defense=5):
+        self.name = name
+        self.health = health
+        self.attack = attack
+        self.defense = defense
 
     def is_alive(self):
-        return Player.health > 0
+        return self.health > 0
 
-    def attack_enemy(Player, enemy):
-        damage = random.randint(1, Player.attack)
-        Enemy.damage(damage)
-        print(f"{Player.name} attacks {Enemy.name} for {damage} damage!")
+    def take_damage(self, damage):
+        actual_damage = max(0, damage - self.defense)
+        self.health -= actual_damage
+        print(f"{self.name} takes {actual_damage} damage.")
 
-    def battle(player, enemy):
-        print(f"Battle begins between {Player.name} and {Player.name}!")
+    def attack_enemy(self, enemy):
+        damage = random.randint(1, self.attack)
+        print(f"{self.name} attacks {enemy.name} for {damage} damage.")
+        enemy.take_damage(damage)
 
-        while player.is_alive() and Enemy.alive():
-            player.attack_enemy(player)
-            if Enemy.alive():
-                player.attack_enemy(player)
 
-        if player.is_alive():
-            print(f"{Player.name} wins the battle!")
-        else:
-            print(f"{Enemy.name} wins the battle!")
+class Enemy():
+    def __init__(self, name, health=50, attack=8, defense=3):
+        self.name = name
+        self.health = health
+        self.attack = attack
+        self.defense = defense
+
+    def is_alive(self):
+        return self.health > 0
+
+    def take_damage(self, damage):
+        actual_damage = max(0, damage - self.defense)
+        self.health -= actual_damage
+        print(f"{self.name} takes {actual_damage} damage.")
+
+    def attack_player(self, companion):
+        damage = random.randint(1, self.attack)
+        print(f"{self.name} attacks {companion.name} for {damage} damage.")
+        companion.take_damage(damage)
+
+
+
+
+class Battle(companion, Enemy):
+    def __init__(self, companion, enemy):
+        self.companion = companion
+        self.enemy = enemy
+
+    def start_battle(self):
+        print(f"A battle between {self.companion.name} and {self.enemy.name} begins!")
+
+        while self.companion.is_alive() and self.enemy.is_alive():
+            self.companion.attack_enemy(self.enemy)
+            if self.enemy.is_alive():
+                self.enemy.attack_player(self.player)
+            else:
+                print(f"{self.enemy.name} is defeated!")
+
+            if self.companion.is_alive():
+                print(f"{self.companion.name}'s health: {self.companion.health}")
+                print(f"{self.enemy.name}'s health: {self.enemy.health}")
+            else:
+                print(f"{self.companion.name} is defeated!")
+
+
+
 
