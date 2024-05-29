@@ -7,11 +7,12 @@ class Animal:
 
         
 class Player:
-    def __init__(self,name,hp,attack, health):
+    def __init__(self,name,hp,attack, health, alive):
         self.name = name
         self.hp1 = hp
-        self.attack1 = attack
+        self.attack = attack
         self.health = health
+        self.alive = alive
 
     def __init__(self, x=0, y=0):
         self.x = x
@@ -33,11 +34,12 @@ class Player:
 
 
 class Enemy: 
-    def __init__(self, name, health, attack):
+    def __init__(self, name, health, attack, alive, damage):
         self.name = name
         self.health = health
         self.attack = attack 
-
+        self.alive = alive
+        self.damage = damage
 
 class Items:
     def __init__(self,name,heal,boost):
@@ -60,3 +62,31 @@ class Inventory:
             print("Inventory:")
             for item in self.items:
                 print(f"- {item}")
+
+
+import random 
+class Battle(Player):
+    def take_damage(self, damage):
+        Player.health -= damage
+
+    def is_alive(self):
+        return Player.health > 0
+
+    def attack_enemy(Player, enemy):
+        damage = random.randint(1, Player.attack)
+        Enemy.damage(damage)
+        print(f"{Player.name} attacks {Enemy.name} for {damage} damage!")
+
+    def battle(player, enemy):
+        print(f"Battle begins between {Player.name} and {Player.name}!")
+
+        while player.is_alive() and Enemy.alive():
+            player.attack_enemy(player)
+            if Enemy.alive():
+                player.attack_enemy(player)
+
+        if player.is_alive():
+            print(f"{Player.name} wins the battle!")
+        else:
+            print(f"{Enemy.name} wins the battle!")
+
