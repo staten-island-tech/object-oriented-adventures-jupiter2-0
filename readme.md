@@ -18,9 +18,9 @@ stragetic
 ### NPC 
 ```python
 (Area found in) name [job/role] 
-name [nurse] 
-name [merchant] 
-name [violet] 
+name [nurse] / hospital
+name [merchant] /shop
+name [violet] /___
 ```
 ### ANIMAL
 ```python
@@ -90,10 +90,10 @@ mom
 starter 
 ---------------------------------
 NPC
-""
-_____
-SPE
-""
+nurse / YN
+merchant / YN
+boss
+violet
 
 BATTLE
 ---------------------------------
@@ -101,9 +101,9 @@ BATTLE
 
 BOSS
 ---------------------------------
-""
+"meet dialogue"
+"death dialogue" 
 
 END
----------------------------------
-""
+
 ```

@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-23T16:03:19.620Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="yzXkWpjkJPMH0J8pcqzr" version="24.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-24T16:15:43.303Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="_kynNHZXAGxPAvu7ygFt" version="24.4.8" type="github">
   <diagram name="Page-1" id="UzpHlQEHdBbeiQkt2dOt">
-    <mxGraphModel dx="1713" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1690" dy="933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -52,16 +52,19 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="pJTVfFiir9rcCeCato23-1" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="NMX02CVuEJwhPitkk1mA-5" target="9NYJH5eUAhIsgToiFgUX-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="NMX02CVuEJwhPitkk1mA-5" value="Ask to if P want to open inventory (Y/N)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="30" y="280" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NMX02CVuEJwhPitkk1mA-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#CC0000;" parent="1" source="NMX02CVuEJwhPitkk1mA-5" target="NMX02CVuEJwhPitkk1mA-8" edge="1">
+        <mxCell id="NMX02CVuEJwhPitkk1mA-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#CC0000;" parent="1" source="NMX02CVuEJwhPitkk1mA-5" target="NMX02CVuEJwhPitkk1mA-8" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="390" as="sourcePoint" />
             <mxPoint x="140" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NMX02CVuEJwhPitkk1mA-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00FF00;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="NMX02CVuEJwhPitkk1mA-5" target="NMX02CVuEJwhPitkk1mA-9" edge="1">
+        <mxCell id="NMX02CVuEJwhPitkk1mA-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#00FF00;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="NMX02CVuEJwhPitkk1mA-5" target="NMX02CVuEJwhPitkk1mA-9" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="390" as="sourcePoint" />
             <mxPoint x="210" y="320" as="targetPoint" />
@@ -225,6 +228,30 @@
         </mxCell>
         <mxCell id="9NYJH5eUAhIsgToiFgUX-3" value="After getting more companions they meet the boss" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#8A8A8A;" parent="1" vertex="1">
           <mxGeometry x="350" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UyVyrDBqx6VgRPyse4PQ-1" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="UyVyrDBqx6VgRPyse4PQ-3" target="9NYJH5eUAhIsgToiFgUX-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="120" as="sourcePoint" />
+            <mxPoint x="470" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UyVyrDBqx6VgRPyse4PQ-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UyVyrDBqx6VgRPyse4PQ-3" target="UyVyrDBqx6VgRPyse4PQ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UyVyrDBqx6VgRPyse4PQ-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UyVyrDBqx6VgRPyse4PQ-3" target="UyVyrDBqx6VgRPyse4PQ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UyVyrDBqx6VgRPyse4PQ-3" value="meeting dialogue / battle" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="517.5" y="100" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UyVyrDBqx6VgRPyse4PQ-4" value="P = dead --&amp;gt; Start Over" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="585" y="40" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UyVyrDBqx6VgRPyse4PQ-5" value="P = defeat boss --&amp;gt; next sequence" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="40" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UyVyrDBqx6VgRPyse4PQ-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="UyVyrDBqx6VgRPyse4PQ-4" target="UyVyrDBqx6VgRPyse4PQ-4">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
