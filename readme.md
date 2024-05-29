@@ -101,10 +101,9 @@ BATTLE
 
 BOSS
 ---------------------------------
-"" 
+"meet dialogue"
+"death dialogue" 
 
 END
----------------------------------
-meet dialogue
-death dialogue
+
 ```
