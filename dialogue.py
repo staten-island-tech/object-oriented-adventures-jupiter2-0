@@ -1,4 +1,21 @@
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+def dnpc(self):
+    def Nurse():
+        Nurse = input("Nurse:Would you like to heal your teammate? (Y/N)")
+        if Nurse == "Y":
+            ("Nurse:Your companion has healed")
+    def Merchant():
+        Merchant = input("Merchant:Would you like to buy items? (Y/N)")
+        if Merchant == "Y":
+            ("Items:")
+    def Npc8():
+        Npc8 = ("Hello! Meet with others and save us from the torment of the Boss.")
+            #("Your companion has healed {hpup}")
+=======
+>>>>>>> e3564a9f1b9f3550e25826c624ae2cf83605aa36
 
 def Nurse1(self):
         Nurse = input("Nurse: Welcome would you like to heal your teammate? (Y/N)")
@@ -16,10 +33,18 @@ def Violet1(self):
         Violet = print("Violet: Hello! Meet with others and save us from the torment of the Boss.")
 
         
+>>>>>>> 4c16a68c459185d221a2d36f0c14b113d9a88d17
 def dB(self):
     if health == 100:
         print("What are you doing here!!")
 # meeting
+<<<<<<< HEAD
+    if health == 0:
+        print("You have defeated me...")
+#Death
+
+
+=======
     elif health == 0:
         print("You have defeated me...")
 #Death
@@ -29,3 +54,7 @@ def dEnd(self):
 
 def drestart():
      print("???: You have failed to defeat the boss")
+<<<<<<< HEAD
+=======
+>>>>>>> 4c16a68c459185d221a2d36f0c14b113d9a88d17
+>>>>>>> e3564a9f1b9f3550e25826c624ae2cf83605aa36
