@@ -90,3 +90,51 @@ class Battle(Player):
         else:
             print(f"{Enemy.name} wins the battle!")
 
+class buyer:
+    def __init__(self, name, budget):
+        self.name = name 
+        self.budget = budget
+        
+    def buy(self, seller, good, price):
+        if self.budget >= price:
+            self.budget -= price
+            seller.sell(good, price)
+
+class seller:
+    def __init__(self,name, iven, price):
+        self.name = name
+        self.iven = iven 
+        self.price = price
+
+    def sell(self, good, price):
+        if good in self.iven:
+            self.iven.remove(good)
+
+
+class Buyer:
+    def __init__(self, name, budget):
+        self.name = name 
+        self.budget = budget
+        
+    def buy(self, seller, good, price):
+        if self.budget >= price:
+            self.budget -= price
+            seller.sell(good, price)
+
+class Seller:
+    def __init__(self,name, iven, price):
+        self.name = name
+        self.iven = iven 
+        self.price = price
+
+    def sell(self, good, price):
+        if good in self.iven:
+            self.iven.remove(good)
+""" class dialogue:
+    def __init__(self,Nurse1,Merchant1,Violet1,dB,dEnd):
+        self.dnpc = Nurse1
+        self.Merchant1 = Merchant1
+        self.Violet1 = Violet1
+        self.dB = dB
+        self.dEnd = dEnd
+    pass """
