@@ -24,7 +24,7 @@ def dB(self):
 #Death
         
 def dEnd(self):
-     print("Thank you",[],"now we are safe from the Boss. See you soon!")
+     print("Thank you",Player.name,"now we are safe from the Boss. See you soon!")
 
 def drestart():
      print("???: You have failed to defeat the boss")

@@ -46,6 +46,7 @@ Kaminari    [4] = Thunder           ,Bolt Beak      ,Flee/Heal
 Voltorb     [4] = Shock Wave        ,Plasma Fist    ,Flee/Heal
 Zaptricity  [4] = Electro Ball      ,Bolt Strike    ,Flee/Heal
 attack1 = ["Electro Ball","Shock Wave","Thunder","Bullet Seed","Drum Beating","Energy Ball","Flame Burst","Blue Flare","Hydro Cannon","Bubbble Beam","Chilling Water"]
+at2 = ["Bolt Strike","Plasma Fist","Bolt Beak","Leaf Blade","Horn Leech","Branch Poke","Flare Blitz","Fire Punch","Bitter Blade","Dive","Clamp","Aqua Cutter"]
 a3 = ["Flee"]
 a4 = ["Heal"]
 
