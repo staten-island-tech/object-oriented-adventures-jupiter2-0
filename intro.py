@@ -1,7 +1,8 @@
 from character import Player
-from character import Companion
 from character import Enemy
 from character import Battle
+from character import Nurse
+from character import Inventory
 import random 
 import json
 
@@ -11,108 +12,95 @@ name = input("Choose a name for your charcter:")
 Player.name = name """
 
 
+EMPTY = ' '
+EXIT = 'E'
+NURSE = 'N'
+BOSS = 'B'
+ANIMAL = 'A'
 
-def create_map(width, height):
-    map = [['[ ]' for _ in range(width)] for _ in range(height)]
-    
-    x, y = 0, 0
-    map[y][x] = '[S]'  
-    
-    while y < height - 1:
-        direction = random.choice(['down', 'right'])
-        if direction == 'down' and y < height - 1:
-            y += 1
-        elif direction == 'right' and x < width - 1:
-            x += 1
-        map[y][x] = '   '  
-
-    
-    map[height - 1][x] = ' E '  
+grid_size = 10
+map_grid = [[EMPTY for _ in range(grid_size)] for _ in range(grid_size)]
 
 
-    while True:
-        nx, ny = random.randint(0, width - 1), random.randint(0, height - 1)
-        if map[ny][nx] == '   ':
-            map[ny][nx] = ' N '  
-            break
-
-    return map
-
-def print_map(map, player):
-    for y in range(len(map)):
-        row = ""
-        for x in range(len(map[y])):
-            if player.x == x and player.y == y:
-                row += ' P '
-            else:
-                row += map[y][x]
-        print(row)
-
-def load_animals(file_path):
-    with open(file_path, 'r') as file:
-        data = json.load(file)
-    return data['animals']
-
-def encounter_animal(animals):
-    if random.random() < 0.4:  
-        return random.choice(animals)
-    return None
-
-def encounter_companion():
-    if random.random() < 0.4: 
-        return companion()
-    return None
-
-def encounter_nurse():
-    print("You have encountered a nurse. She says:")
-    print("'Hello there! I can heal you and your companions.'")
-    print("'Be careful in this map, and good luck!'")
-
-if __name__ == "__main__":
-    width = 45
-    height = 20
-    
-    map = create_map(width, height)
-    player = Player(health=100, attack_power=20, start_x=0, start_y=0)
-    animals = load_animals('animals.json')
-
-    while True:
-        print_map(map, player)
-        move = input("Enter move (up, down, left, right): ").strip().lower()
-        
-        if move in ['up', 'down', 'left', 'right']:
-            player.move(move, map)
-        else:
-            print("Invalid move. Please enter 'up', 'down', 'left', or 'right'.")
-
-        if map[player.y][player.x] == ' E ':
-            print("Congratulations! You've reached the exit!")
-            break
-        elif map[player.y][player.x] == ' N ':
-            encounter_nurse()
-        
-   
-        animal = encounter_animal(animals)
-        if animal:
-            print(f"You've encountered a {animal}!")
-            player.inventory.add_item(animal)
-
-       
-        companion = encounter_companion()
-        if companion:
-            print(f"You've met {Companion.name} who will join you on your journey!")
-            player.inventory.append(companion)
+exit_position = (random.randint(0, grid_size-1), random.randint(0, grid_size-1))
+map_grid[exit_position[0]][exit_position[1]] = EXIT
 
 
-        if random.random() < 0.2:
-            enemy = Enemy(health = 50, attack_power = 15)
-            Battle(player, enemy)
-            if not Player.alive():
-                print("Game Over")
-                break
+nurse_position = (random.randint(0, grid_size-1), random.randint(0, grid_size-1))
+while nurse_position == exit_position:
+    nurse_position = (random.randint(0, grid_size-1), random.randint(0, grid_size-1))
+map_grid[nurse_position[0]][nurse_position[1]] = NURSE
 
-        print(f"Inventory: {player.inventory.show_inventory()}")
-        print(f"Companions: {[Companion.name for companion in Player.companions]}")
+
+boss_position = (random.randint(0, grid_size-1), random.randint(0, grid_size-1))
+while boss_position == exit_position or boss_position == nurse_position:
+    boss_position = (random.randint(0, grid_size-1), random.randint(0, grid_size-1))
+map_grid[boss_position[0]][boss_position[1]] = BOSS
+
+num_animals = 5
+animal_positions = []
+for _ in range(num_animals):
+    animal_position = (random.randint(0, grid_size-1), random.randint(0, grid_size-1))
+    while animal_position == exit_position or animal_position == nurse_position or animal_position == boss_position or animal_position in animal_positions:
+        animal_position = (random.randint(0, grid_size-1), random.randint(0, grid_size-1))
+    animal_positions.append(animal_position)
+    map_grid[animal_position[0]][animal_position[1]] = ANIMAL
+
+
+for row in map_grid:
+    print('[' + ']['.join(row) + ']')
+
+
+
+with open('animals.json', 'r') as file:
+    animals_data = json.load(file)
+
+
+inventory = Inventory()
+player = Player(name="nurse", health=100, inventory=inventory)
+nurse = Nurse()
+
+
+player_position = (0, 0)
+
+def move_player(player_position, direction):
+    x, y = player_position
+    if direction == 'up' and x > 0:
+        x -= 1
+    elif direction == 'down' and x < grid_size - 1:
+        x += 1
+    elif direction == 'left' and y > 0:
+        y -= 1
+    elif direction == 'right' and y < grid_size - 1:
+        y += 1
+    return (x, y)
+
+
+
+commands = ['down', 'down', 'right', 'right', 'up', 'right', 'down']  
+for command in commands:
+    player_position = move_player(player_position, command)
+    x, y = player_position
+    if map_grid[x][y] == NURSE:
+        nurse.heal(player)
+        print(f"{player.name} is healed by the nurse!")
+    elif map_grid[x][y] == ANIMAL:
+        animal = random.choice(animals_data)
+        enemy = Enemy(name=animal['name'], health=animal['health'], attack=animal['attack'])
+        battle = Battle(player, enemy)
+        battle.start_battle()
+    elif map_grid[x][y] == BOSS:
+        boss = Enemy(name="Boss", health=150, attack=20)
+        battle = Battle(player, boss)
+        battle.start_battle()
+        break
+    elif map_grid[x][y] == EXIT:
+        print(f"{player.name} has found the exit!")
+        break
+
+    print(f"Player moved to {player_position}")
+
+
 
 
 

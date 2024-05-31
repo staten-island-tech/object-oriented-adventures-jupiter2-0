@@ -1,52 +1,30 @@
-
-class Animal:
+class companion:
     def __init__(self,type,hp,attack):
         self.type = type
         self.hp = hp
         self.attack = attack
 
-        
+    def battle(self, enemy):
+        pass
+
 class Player:
-    def __init__(self,name,hp,attack, health, alive):
+    def __init__(self, name, health, inventory):
         self.name = name
-        self.hp1 = hp
+        self.health = health
+        self.inventory = inventory
+
+    def move(self, direction, grid_size):
+        pass
+
+
+class Enemy:
+    def __init__(self, name, health, attack):
+        self.name = name
+        self.health = health
         self.attack = attack
-        self.health = health
-        self.alive = alive
 
-    def __init__(self, x=0, y=0):
-        self.x = x
-        self.y = y
-        self.inventory = Inventory()
-
-    def move(self, direction):
-        if direction == 'up':
-            self.y -= 1
-        elif direction == 'down':
-            self.y += 1
-        elif direction == 'left':
-            self.x -= 1
-        elif direction == 'right':
-            self.x += 1
-
-    def get_position(self):
-        return self.x, self.y
-
-
-class Enemy: 
-    def __init__(self, name, health, attack, alive, damage):
-        self.name = name
-        self.health = health
-        self.attack = attack 
-        self.alive = alive
-        self.damage = damage
-
-class Items:
-    def __init__(self,name,heal,boost):
-        self.name = name
-        self.heal = heal
-        self.boost = boost
-        
+    def attack_player(self, companion):
+        pass
 
 class Inventory:
     def __init__(self):
@@ -55,13 +33,13 @@ class Inventory:
     def add_item(self, item):
         self.items.append(item)
 
-    def show_inventory(self):
-        if not self.items:
-            print("Inventory is empty.")
-        else:
-            print("Inventory:")
-            for item in self.items:
-                print(f"- {item}")
+    def remove_item(self, item):
+        if item in self.items:
+            self.items.remove(item)
+
+class Nurse:
+    def heal(self, companion):
+        companion.health = 100 
 
 
 import random 
@@ -89,4 +67,6 @@ class Battle(Player):
             print(f"{Player.name} wins the battle!")
         else:
             print(f"{Enemy.name} wins the battle!")
+
+
 
