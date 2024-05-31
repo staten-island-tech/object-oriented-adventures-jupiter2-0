@@ -16,10 +16,10 @@ def Violet1(self):
 
         
 def dB(self):
-    if health == 100:
+    if enemy.health == 100:
         print("What are you doing here!!")
 # meeting
-    elif health == 0:
+    elif enemy.health == 0:
         print("You have defeated me...")
 #Death
         
