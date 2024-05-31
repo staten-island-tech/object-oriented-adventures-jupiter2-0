@@ -1,2 +1,2 @@
-from character import seller
-from character import buyer 
+from character import Seller
+from character import Buyer 
