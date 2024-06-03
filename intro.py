@@ -3,9 +3,11 @@ from character import Inventory
 import random 
 import json
 
+#save file/slot
 """ print ("Welcome to jupiter. Walk through the land and to the Boss to fight it. After you beat the Boss, find the exit to end the game. ")
 name = input("Choose a name for your charcter:")
 Player.name = name"""
+
 
 def create_map(width, height):
     map = [['[ ]' for _ in range(width)] for _ in range(height)]
@@ -115,7 +117,7 @@ if __name__ == "__main__":
         if move in ['up', 'down', 'left', 'right']:
             player.move(move, map)
         else:
-                        print("Invalid move. Please enter 'up', 'down', 'left', or 'right'.")
+            print("Invalid move. Please enter 'up', 'down', 'left', or 'right'.")
 
         if map[player.y][player.x] == '     E     ':
             print("Congratulations! You've reached the exit!")

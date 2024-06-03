@@ -1,12 +1,12 @@
 
-class Animal:
+class Animal():
     def __init__(self,type,hp,attack):
         self.type = type
         self.hp = hp
         self.attack = attack
 
         
-class Player:
+class Player():
     def __init__(self,name,hp,attack, health, alive):
         self.name = name
         self.hp1 = hp
@@ -33,7 +33,7 @@ class Player:
         return self.x, self.y
 
 
-class Enemy: 
+class Enemy(): 
     def __init__(self, name, health, attack, alive, damage):
         self.name = name
         self.health = health
@@ -41,14 +41,14 @@ class Enemy:
         self.alive = alive
         self.damage = damage
 
-class Items:
+class Items():
     def __init__(self,name,heal,boost):
         self.name = name
         self.heal = heal
         self.boost = boost
         
 
-class Inventory:
+class Inventory():
     def __init__(self):
         self.items = []
 
@@ -90,7 +90,7 @@ class Battle(Player):
         else:
             print(f"{Enemy.name} wins the battle!")
 
-class buyer:
+class Buyer():
     def __init__(self, name, budget):
         self.name = name 
         self.budget = budget
@@ -100,28 +100,7 @@ class buyer:
             self.budget -= price
             seller.sell(good, price)
 
-class seller:
-    def __init__(self,name, iven, price):
-        self.name = name
-        self.iven = iven 
-        self.price = price
-
-    def sell(self, good, price):
-        if good in self.iven:
-            self.iven.remove(good)
-
-
-class Buyer:
-    def __init__(self, name, budget):
-        self.name = name 
-        self.budget = budget
-        
-    def buy(self, seller, good, price):
-        if self.budget >= price:
-            self.budget -= price
-            seller.sell(good, price)
-
-class Seller:
+class Seller():
     def __init__(self,name, iven, price):
         self.name = name
         self.iven = iven 
