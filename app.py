@@ -2,8 +2,7 @@ from character import Player, Nurse, Boss, load_companions
 from intro import create_map, print_map, random_companion_encounter, battle
 
 print("Welcome to Jupiter. Walk around the map to get to the exit, meet companions on the way and defeat the boss at the exit to win the game")
-name = input ("Choose a name for your player:")
-name = Player.name
+
 
 def main():
     width, height = 10,10
