@@ -8,7 +8,7 @@ def Nurse1(self):
 def Merchant1(self):
         Merchant = input("Merchant: Hello would you like to buy items? (Y/N)")
         if Merchant == "Y":
-            p
+            import market
         else:
             print("See you soon.")
 def Violet1(self):
