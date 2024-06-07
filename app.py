@@ -1,7 +1,7 @@
 from character import Player, Nurse, Boss, load_companions
 from intro import create_map, print_map, random_companion_encounter, battle
 
-print("Welcome to Jupiter. Walk around the map to get to the exit, meet companions on the way and defeat the boss at the exit to win the game")
+print("Welcome to Jupiter. Walk around the map to get to the exit, meet companions on the way and defeat the boss at the exit to win the game!")
 
 
 def main():
@@ -9,7 +9,7 @@ def main():
     map, nurse_position = create_map(width, height)
     player = Player(0, 0)
     companions = load_companions()
-    boss = Boss("DarkLord", 150, {"shadow strike": 10, "dark pulse": 30})
+    boss = Boss("DarkLord", 80, {"shadow strike": 10, "dark pulse": 30})
 
     while True:
         print_map(map, player)

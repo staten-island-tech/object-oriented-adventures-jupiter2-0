@@ -11,16 +11,19 @@ class Inventory:
     def show_inventory(self):
         return self.items
 
-    def use_potion(self, companion):
+    def use_potion(self, character):
         if self.potions > 0:
-            print(f"Using potion on {companion.name}")
-            companion.hp = min(companion.hp + 30, companion.max_hp)
             self.potions -= 1
+            character.health += 20
+            if character.health > 100:  
+                character.health = 100
+            print(f"{character.name} used a potion and gained 20 HP. Current health: {character.health}")
         else:
-            print("No potions left!")
+            print("No more potions left!")
 
 class Companion:
-    def __init__(self, attacks, hp):
+    def __init__(self, name, attacks, hp):
+        self.name = name
         self.attacks = attacks
         self.hp = hp
         self.max_hp = hp
@@ -32,8 +35,7 @@ class Companion:
             return 0
 
 class Player:
-    def __init__(self, name, start_x, start_y):
-        self.name = name 
+    def __init__(self, start_x, start_y):
         self.x = start_x
         self.y = start_y
         self.inventory = Inventory()
@@ -75,6 +77,6 @@ class Boss:
         else:
             return 0
 
-def load_companions(file):
-    with open(file, 'r') as f:
+def load_companions():
+    with open('companion.json', 'r') as f:
         return [Companion(**companion) for companion in json.load(f)]

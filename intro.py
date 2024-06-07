@@ -56,6 +56,17 @@ def battle(player_companion, boss):
             use_potion = input("Your companion is low on HP! Use a potion? (yes/no): ").strip().lower()
             if use_potion == "yes":
                 Player.inventory.use_potion(player_companion)
+        
+
+
+
+
+
+
+    
+
+
+
 
 
 
