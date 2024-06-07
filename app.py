@@ -5,7 +5,7 @@ print("Welcome to Jupiter. Walk around the map to get to the exit, meet companio
 
 
 def main():
-    width, height = 10,10
+    width, height = 20, 20
     map, nurse_position = create_map(width, height)
     player = Player(0, 0)
     companions = load_companions()
