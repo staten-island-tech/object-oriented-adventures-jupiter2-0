@@ -15,8 +15,8 @@ class Inventory:
         if self.potions > 0:
             self.potions -= 1
             character.health += 20
-            if character.health > 100:  
-                character.health = 100
+            if character.health > 50:  
+                character.health = 50
             print(f"{character.name} used a potion and gained 20 HP. Current health: {character.health}")
         else:
             print("No more potions left!")
